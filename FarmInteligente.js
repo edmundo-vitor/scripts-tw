@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         Farm inteligente
 // @namespace    http://tampermonkey.net/
 // @version      2024-08-29
 // @description  Auto farm com assistente de saque para todas as suas aldeias
@@ -149,6 +149,7 @@
             console.log("Começando a brincadeira...");
 
             const aldeiaAtual = buscarAldeiaAtual();
+            await aguardarTempoEspera(300);
 
             if(!(aldeiasSemTropas.includes(aldeiaAtual))) {
                 console.log(`Aldeia atual: ${aldeiaAtual}`);
